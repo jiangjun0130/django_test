@@ -1,6 +1,7 @@
 from django.shortcuts import render
+
+from django.shortcuts import render
 from django.http import HttpResponse
-from . import models
 
 # Create your views here.
 
@@ -8,6 +9,6 @@ from . import models
 #    return HttpResponse('Hello Django!')
 
 def index(request):
-    article = models.Article.objects.get(pk=1)
-    return render(request, 'blog/index.html', {'article': article})
+    return render(request, 'blog2/index.html')
+
 
